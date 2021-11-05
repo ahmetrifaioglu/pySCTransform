@@ -866,4 +866,4 @@ def SCTransform(
         exclude_poisson=exclude_poisson,
     )
     residuals = get_hvg_residuals(vst_out, var_features_n, res_clip_range)
-    return residuals
+    return residuals, vst_out
