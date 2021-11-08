@@ -863,6 +863,7 @@ def SCTransform(
         method=method,
         n_cells=n_cells,
         n_genes=n_genes,
+        corrected_counts=True,
         exclude_poisson=exclude_poisson,
     )
     residuals = get_hvg_residuals(vst_out, var_features_n, res_clip_range)
